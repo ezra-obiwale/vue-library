@@ -3,27 +3,38 @@
   "version": "0.0.0",
   "description": "A short description of the library",
   "rollup": {
-    "main": "dist/library.js",
-    "module": "dist/library.es.js",
+    "module": "dist/library.esm.js",
+    "ssr": "dist/library.ssr.js",
     "browser": "dist/library.min.js"
   },
-  "repository": "https://github.com/ezra-obiwale/npm-library",
+  "repository": "https://github.com/ezra-obiwale/vue-library",
   "author": "Ezra Obiwale",
   "license": "MIT",
-  "main": "dist/library.es.js",
+  "main": "dist/library.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -cw",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@rollup/plugin-commonjs": "^11.0.1",
     "@rollup/plugin-multi-entry": "^3.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "@vuepress/plugin-back-to-top": "^1.3.0",
     "rollup": "^1.29.1",
     "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-terser": "^5.2.0"
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-vue": "^5.1.6",
+    "vue-docgen-api": "^4.8.1",
+    "vue-docgen-cli": "^4.8.1",
+    "vuepress": "^1.3.0",
+    "vuepress-plugin-dehydrate": "^1.1.3",
+    "vuepress-plugin-redirect": "^1.2.3",
+    "vuepress-theme-yuu": "^2.2.1"
   },
-  "scripts": {
-    "build": "rollup -c",
-    "build:watch": "rollup -cw"
-  },
-  "dependencies": {}
+  "dependencies": {
+  }
 }
