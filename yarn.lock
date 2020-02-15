@@ -7548,7 +7548,7 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-smoothscroll-polyfill@^0.4.3, smoothscroll-polyfill@^0.4.4:
+smoothscroll-polyfill@^0.4.3:
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
   integrity sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==
@@ -8586,7 +8586,7 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
-vuepress-plugin-container@^2.0.2, vuepress-plugin-container@^2.1.2:
+vuepress-plugin-container@^2.0.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-container/-/vuepress-plugin-container-2.1.2.tgz#688c1e5a9709a1b8658605bcaee580b3abb19d16"
   integrity sha512-Df5KoIDMYiFg45GTfFw2hIiLGSsjhms4f3ppl2UIBf5nWMxi2lfifcoo8MooMSfxboxRZjoDccqQfu0fypaKrQ==
@@ -8600,13 +8600,6 @@ vuepress-plugin-dehydrate@1.1.3, vuepress-plugin-dehydrate@^1.1.3:
   dependencies:
     "@vuepress/shared-utils" "^1.2.0"
 
-vuepress-plugin-nprogress@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-nprogress/-/vuepress-plugin-nprogress-1.1.6.tgz#cfef778d97323b7c89de6c1c9cc17e9085fef599"
-  integrity sha512-KJ9jEtuzyOgfdU5w1iQwHMVUqLPvKA4Yr32zbEY1g1wpEveABaLyr1P3We5smPrPo2dd5XLyormqhV9or2GUkw==
-  dependencies:
-    nprogress "^0.2.0"
-
 vuepress-plugin-redirect@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-redirect/-/vuepress-plugin-redirect-1.2.3.tgz#f0454c7c609f16fa63bb268a0b8e561ee42b2381"
@@ -8614,13 +8607,6 @@ vuepress-plugin-redirect@^1.2.3:
   dependencies:
     "@shigma/stringify-object" "^3.3.0"
     vuepress-plugin-dehydrate "1.1.3"
-
-vuepress-plugin-smooth-scroll@0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-smooth-scroll/-/vuepress-plugin-smooth-scroll-0.0.9.tgz#6c5d01db60def3d7b976b53404e56b97da9e8f39"
-  integrity sha512-UXX+HLZO1NKVwyiOJlj0smh8F9dKnwybjEi7w/Mj9EYLhKrNYr5uXs+N+OTt8VwKCn3f0vZ1XAwFIjsPlD7GJA==
-  dependencies:
-    smoothscroll-polyfill "^0.4.4"
 
 vuepress-plugin-smooth-scroll@^0.0.3:
   version "0.0.3"

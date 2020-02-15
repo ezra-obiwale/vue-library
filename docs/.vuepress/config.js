@@ -18,11 +18,13 @@ module.exports = {
   },
   theme: 'yuu',
   themeConfig: {
+    lastUpdated: 'Last Updated',
     repoLabel: 'Contribute!',
     repo: pkg.repository,
     nav: nav.length ? nav : false,
     sidebar: sidebar.length ? sidebar : 'auto',
-    sidebarDepth: 3,
+    sidebarDepth: 2,
+    smoothScroll: true,
     yuu: {
       defaultDarkTheme: true,
       disableThemeIgnore: true

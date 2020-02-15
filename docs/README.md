@@ -2,5 +2,6 @@
 home: true
 heroText: Vue Components
 actionText: Get Started
-actionLink: /tools-n-configs/
+actionLink: /tools/
+search: false
 ---

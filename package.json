@@ -14,8 +14,9 @@
   "scripts": {
     "build": "rollup -c",
     "build:watch": "rollup -cw",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:gen": "yarn vue-docgen",
+    "docs:dev": "yarn docs:gen & vuepress dev docs",
+    "docs:build": "yarn docs:gen && vuepress build docs"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
@@ -28,7 +29,6 @@
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-terser": "^5.2.0",
     "rollup-plugin-vue": "^5.1.6",
-    "vue-docgen-api": "^4.8.1",
     "vue-docgen-cli": "^4.8.1",
     "vuepress": "^1.3.0",
     "vuepress-plugin-dehydrate": "^1.1.3",
