@@ -8,13 +8,11 @@ import pkg from './package.json'
 export default [
   // ESM build to be used with webpack/rollup.
   {
-    input: 'src/components/index.js',
-    output: [
-      {
-        file: pkg.rollup.module,
-        format: 'esm'
-      }
-    ],
+    input: 'src/index.js',
+    output: {
+      file: pkg.rollup.module,
+      format: 'esm'
+    },
     plugins: [
       resolve(),
       commonjs(),
@@ -27,13 +25,12 @@ export default [
   },
   // SSR build.
   {
-    input: 'src/components/index.js',
-    output: [
-      {
-        file: pkg.rollup.ssr,
-        format: 'cjs'
-      }
-    ],
+    input: 'src/index.js',
+    output: {
+      file: pkg.rollup.ssr,
+      format: 'cjs',
+      exports: 'named'
+    },
     plugins: [
       resolve(),
       commonjs(),
@@ -47,12 +44,12 @@ export default [
   // Browser build.
   {
     input: 'src/index.js',
-    output: [
-      {
-        file: pkg.rollup.browser,
-        format: 'iife'
-      }
-    ],
+    output: {
+      file: pkg.rollup.browser,
+      format: 'iife',
+      name: pkg.name.replace(/[^a-z][a-z]/gi, str => str[1].toUpperCase()),
+      exports: 'named'
+    },
     plugins: [
       resolve(),
       commonjs(),

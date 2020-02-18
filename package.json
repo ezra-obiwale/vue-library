@@ -1,5 +1,5 @@
 {
-  "name": "library",
+  "name": "@vue/library",
   "version": "0.0.0",
   "description": "A short description of the library",
   "rollup": {
