@@ -5,6 +5,10 @@ import vue from 'rollup-plugin-vue'
 import { terser } from 'rollup-plugin-terser'
 import pkg from './package.json'
 
+const resolver = resolve({
+  extensions: ['.js', '.vue']
+})
+
 export default [
   // ESM build to be used with webpack/rollup.
   {
@@ -14,7 +18,7 @@ export default [
       format: 'esm'
     },
     plugins: [
-      resolve(),
+      resolver,
       commonjs(),
       vue(),
       babel({
@@ -32,7 +36,7 @@ export default [
       exports: 'named'
     },
     plugins: [
-      resolve(),
+      resolver,
       commonjs(),
       vue({ template: { optimizeSSR: true } }),
       babel({
@@ -51,7 +55,7 @@ export default [
       exports: 'named'
     },
     plugins: [
-      resolve(),
+      resolver,
       commonjs(),
       vue(),
       babel({
