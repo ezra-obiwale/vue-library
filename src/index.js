@@ -1,6 +1,6 @@
 import * as components from './components'
 
-export const registerComponents = () => {
+export const registerComponents = Vue => {
   for (const name in components) {
     Vue.component(name, components[name])
   }
@@ -18,7 +18,7 @@ export default {
     }
   ) {
     if (options.components) {
-      registerComponents()
+      registerComponents(Vue)
     }
   }
 }
